@@ -1,13 +1,15 @@
 body {
   background-image: url("https://wallpapers-clan.com/wp-content/uploads/2024/11/chill-guy-background.jpg");
+  background-color: #7DF9FF;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   margin-top: 10%;
+  font-family: 'Arial', sans-serif;
 }
 
-html{
+html {
   height: 100%;
   width: 100%;
 }
@@ -17,7 +19,7 @@ html{
   border: 15px double #8bbcbbff;
 }
 
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
@@ -25,7 +27,7 @@ html{
   align-items: flex-start;
 }
 
-.pic{
+.pic {
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -33,14 +35,41 @@ html{
   border: 15px double #8bbcbbff;
 }
 
-h2{
-  color: black;
+h2 {
+  color: #1B03A3;
 }
 
-#start{
+#start {
   text-align: left;
 }
 
-#end{
+#end {
   text-align: right;
+}
+
+h1, h2, h3, p {
+  color: #1B03A3;
+  text-shadow: 0 0 10px #1B03A3, 0 0 20px #1B03A3, 0 0 30px #1B03A3;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden; 
+  border-right: .15em solid purple; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: purple; }
 }
